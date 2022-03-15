@@ -1,0 +1,165 @@
+
+<body>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <a href="https://api.whatsapp.com/send?phone=+52 1 3316232715&text=¡Hola! diga… ¡Hola! ¡Quiero saber más sobre las creaciones y me ayuden a elegir entre todas!" class="float-whats" target="_blank">
+  <i class="fa fa-whatsapp my-float"></i>
+  </a>
+</body>
+
+<style>
+  .float-whats{
+	position:fixed;
+	width:40px;
+	height:40px;
+	bottom:25px;
+	left: 30px;
+	background-color:#EFB3CB;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+	font-size:25px;
+	-webkit-box-shadow: 0px 0px 8px 5px rgba(0,0,0,0.10);
+	box-shadow: 0px 0px 8px 5px rgba(0,0,0,0.10);
+  	z-index:100;
+}
+
+.float-whats:hover {
+	text-decoration: none;
+	color: #EFB3CB;
+  	background-color:#fff;
+}
+
+.my-float{
+	margin-top:8px;
+}
+@media(min-width:480px){
+	.float-whats{
+		width:60px;
+		height:60px;
+		font-size:30px;
+	}
+	.my-float{
+	margin-top:16px;
+	}
+}
+.vtex-product-list-0-x-quantitySelectorButton{
+	visibility: hidden;
+  padding: 0;
+}
+.vtex-product-list-0-x-quantitySelectorDecrease--qty-selector::before{
+	background-image: url(arquivos/checkout-menos-icono.png);
+    background-size: 25px 25px;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    content: "";
+	visibility: initial;
+}
+.vtex-product-list-0-x-quantitySelectorIncrease--qty-selector::before{
+	background-image: url(arquivos/checkout-mas-icono.png);
+    background-size: 25px 25px;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    content: "";
+	visibility: initial;
+}
+.vtex-product-list-0-x-quantitySelectorButton svg{
+	display: none;
+}
+.vtex-login-2-x-accountOptions hr {
+    color: #EFB3CB!important;
+}
+.vtex-my-account-1-x-userInfo div{
+    display: flex;
+    padding-right: 5px;
+}
+.vtex-my-account-1-x-menuLinks .c-on-base {
+    color: #EFB3CB!important;
+}
+.vtex-my-account-1-x-menuLinks .b--action-primary{
+    border-color: #000000!important;
+}
+.vtex-flex-layout-0-x-flexRowContent--container-formulario .vtex-dropdown span{
+  font-size: 0;
+}
+.vtex-flex-layout-0-x-flexRowContent--container-formulario .vtex-dropdown span::before{
+  content: "Subir CV o solicitud, (Campo Obligatorio)";
+  text-transform: uppercase!important;
+  color: #000000;
+  font-family: "Sofia-Pro";
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 2px;
+}
+.vtex-flex-layout-0-x-flexRowContent--container-formulario .flex .absolute{
+  left: 15vw;
+}
+@media(min-width:400){
+  .vtex-flex-layout-0-x-flexRowContent--container-formulario .flex .absolute{
+  left: 18vw;
+  }
+}
+@media(min-width:750){
+  .vtex-flex-layout-0-x-flexRowContent--container-formulario .flex .absolute{
+  left: 33vw;
+  }
+}
+@media(min-width:1024){
+  .vtex-flex-layout-0-x-flexRowContent--container-formulario .flex .absolute{
+  left: 37vw;
+  }
+}
+@media(min-width:1200px){
+  .vtex-flex-layout-0-x-flexRowContent--container-formulario .flex .absolute{
+  left: 43vw;
+  }
+}
+.vtex-flex-layout-0-x-flexRowContent--container-formulario .flex .absolute .mb4{
+  display: none;
+}
+.vtex-flex-layout-0-x-flexRowContent--container-formulario .flex .absolute .bg-disabled{
+  display: none;
+}
+</style>
+
+<script>
+	function getCookieApp(cname) {
+    var name = cname + "=";
+    var decodedCookie = decodeURIComponent(document.cookie);
+    var ca = decodedCookie.split(';');
+    for(var i = 0; i <ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) == ' ') {
+            c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+            return c.substring(name.length, c.length);
+        }
+    }
+    return "";
+}
+
+function setCookieApp(cname, cvalue, exdays) {
+    var d = new Date();
+    d.setTime(d.getTime() + (exdays2460601000));
+    var expires = "expires="+ d.toUTCString();
+    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+}
+
+try {
+    if (window.location.href.indexOf("customapp=") != -1) {
+        setCookieApp("is_app",1,365);
+    }
+
+    if ( getCookieApp("is_app") ) {
+        var head = document.getElementsByTagName('head')[0];
+        var style = document.createElement('style');
+        style.type = 'text/css';
+        style.innerHTML = '.vtex-store-components-3-x-notificationBarContainer--notif-bar, .vtex-sticky-layout-0-x-wrapper, .vtex-store-footer-2-x-footerLayout, .vtex-store-components-3-x-backToTopButtonContainer, .float-whats{display: none; }';
+        head.appendChild(style);
+    }
+} catch(e){
+    console.log(e);
+}
+</script>

@@ -1,0 +1,29 @@
+{
+  "name": "facturacion",
+  "vendor": "paulette",
+  "version": "0.1.8",
+  "title": "paulette",
+  "description": "Formulario de facturacion guardado en MD paulette",
+  "builders": {
+    "react": "3.x",
+    "store": "0.x",
+    "pixel": "0.x",
+    "docs": "0.x"
+  },
+  "dependencies": {
+    "vtex.pixel-interfaces": "1.x",
+    "vtex.styleguide": "9.x"
+  },
+  "settingsSchema": {
+    "title": "YOUR APP NAME",
+    "type": "object",
+    "properties": {
+      "gtmId": {
+        "title": "SAMPLE FIELD",
+        "description": "Enter the ID (GTM-XXXX) from your Google Tag Manager",
+        "type": "string"
+      }
+    }
+  },
+  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
+}
